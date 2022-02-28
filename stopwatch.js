@@ -14,16 +14,16 @@ window.onload = function () {
 
   buttonStart.onclick = function() {
     clearInterval(Interval);
-     Interval = setInterval(startTimer, 10);
+    Interval = setInterval(startTimer, 10);
   }
- 
+
     buttonStop.onclick = function() {
-       clearInterval(Interval);
+      clearInterval(Interval);
   }
 
 
   buttonReset.onclick = function() {
-     clearInterval(Interval);
+    clearInterval(Interval);
     tens = "00";
   	seconds = "00";
     mins = "00";
@@ -32,7 +32,6 @@ window.onload = function () {
   	appendMinuts.innerHTML = mins;
   }
   
-   
   
   function startTimer () {
     tens++; 
@@ -42,8 +41,7 @@ window.onload = function () {
     
     if (tens > 9){
       appendTens.innerHTML = tens;
-      
-   }
+      }
     
     
     if (tens > 99) {
@@ -54,9 +52,8 @@ window.onload = function () {
       appendTens.innerHTML = "0" + tens ;
     }
     if ( seconds > 9){
-     appendSeconds.innerHTML = seconds;
-   }
-   
+    appendSeconds.innerHTML = seconds;
+    }
     if (seconds  >= 60 ){ 
       mins++;
       appendMinuts.innerHTML = "0" + mins;
