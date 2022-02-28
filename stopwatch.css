@@ -1,26 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;300&display=swap");
 
 body {
   background: #2d2c36;
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: "Smooch Sans", sans-serif;
   height: 100%;
   max-width: 800px;
   margin: auto;
 }
 
 .container {
-  
   color: rgb(202, 167, 50);
   text-align: center;
   width: 50%;
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: "Smooch Sans", sans-serif;
   /*background: rgba(191, 207, 44, 0.4);*/
   border-radius: 0.9rem;
   margin-right: auto;
   margin-left: auto;
- padding: 0.6rem 0.6rem ;
- 
+  padding: 0.6rem 0.6rem;
 }
 @media (min-width: 480px) {
   .container {
@@ -29,7 +26,7 @@ body {
 }
 
 h1 {
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: "Smooch Sans", sans-serif;
   font-weight: 300;
   font-size: 2.6em;
   text-transform: uppercase;
@@ -45,7 +42,7 @@ h1 {
 }
 
 button {
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: "Smooch Sans", sans-serif;
   background-clip: padding-box;
   border-radius: 1rem;
   background: #3e3d49;
@@ -57,10 +54,9 @@ button {
   padding: 10px 10px;
   width: 80px;
   text-align: center;
- 
 }
 button:hover {
-  background:  rgb(202, 167, 50);
+  background: rgb(202, 167, 50);
   border: solid 1px #fff;
   color: #fff;
   text-align: center;
@@ -73,6 +69,62 @@ button:hover {
     margin: auto;
     margin-top: 0.5rem;
     font-size: 1.125rem;
-  
   }
 }
+
+footer{
+  padding:20x;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+a{
+  text-decoration:none;
+  }
+ul{
+  display:flex;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.row{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+.row-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%
+}
+
+
+.responsive-img{
+  max-width:70%;
+  height:auto;
+  opacity:0.9;
+ justify-content: center;
+
+  
+}
+
+#profile-link {
+  display:inline-block;
+  margin:0 10px;
+  padding:2px;
+  width:40px;
+  height:30px;
+  
+}
+footer{
+  padding:5px;
+  border-top:1px ;
+  background-color:rgb(199, 168, 75);
+  box-shadow:1px 1px 10px #d8cbd7
+}
+
+
+
