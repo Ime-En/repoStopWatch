@@ -1,60 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;300&display=swap');
+
+
 body {
-  background: #d49a9a;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: #2d2c36;
+  font-family: 'Smooch Sans', sans-serif;
   height: 100%;
   max-width: 800px;
   margin: auto;
 }
 
 .container {
-  width: 800px;
-  margin: 30px auto;
-  color: #fff;
+  
+  color: rgb(202, 167, 50);
   text-align: center;
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
+  width: 50%;
+  font-family: 'Smooch Sans', sans-serif;
+  /*background: rgba(191, 207, 44, 0.4);*/
+  border-radius: 0.9rem;
+  margin-right: auto;
+  margin-left: auto;
+ padding: 0.6rem 0.6rem ;
+ 
+}
+@media (min-width: 480px) {
+  .container {
+    padding: 3rem;
+  }
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-family: 'Smooch Sans', sans-serif;
+  font-weight: 300;
   font-size: 2.6em;
   text-transform: uppercase;
+  text-align: center;
+  color: rgb(202, 167, 50);
 }
 
 #mins,
 #seconds,
 #tens {
   font-size: 2em;
+  text-align: center;
 }
 
 button {
+  font-family: 'Smooch Sans', sans-serif;
   background-clip: padding-box;
-  border-radius: 0.25rem;
-  background: #d49a9a;
+  border-radius: 1rem;
+  background: #3e3d49;
   color: #fff;
   border: solid 1px #fff;
   text-decoration: none;
-  cursor: pointer;
-  font-size: 1.2em;
-  padding: 18px 10px;
-  width: 180px;
-  margin: 10px;
-  outline: none;
+  /*cursor: pointer;*/
+  font-size: 1.3em;
+  padding: 10px 10px;
+  width: 80px;
+  text-align: center;
+ 
 }
 button:hover {
-  background: #fff;
+  background:  rgb(202, 167, 50);
   border: solid 1px #fff;
-  color: #d49a9a;
+  color: #fff;
+  text-align: center;
 }
-@media (max-width: 750px) {
+@media (max-width: 450px) {
   button {
     display: flex;
     align-items: center;
-    margin: auto;
     padding: auto;
+    margin: auto;
+    margin-top: 0.5rem;
     font-size: 1.125rem;
-    margin-bottom: 0.5rem;
+  
   }
 }
