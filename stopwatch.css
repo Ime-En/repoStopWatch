@@ -126,5 +126,63 @@ footer{
   box-shadow:1px 1px 10px #d8cbd7
 }
 
+.stopwatchCircle{
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+  position:relative;
+  height:300px; /* or some other number */
+  
+}
 
+.stopwatchNumber{
+  position:absolute;
+  top: 35%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%); /* This is a shorthand of
+                                       translateX(-50%) and translateY(-50%) */
+}
+svg {
+	width: 100%;
+	max-width: 15rem;
+	animation: rotate s linear infinite;
+}
+
+circle {
+	fill: none;
+	stroke: rgb(199, 168, 75);
+	stroke-width: 8px;
+	stroke-dasharray: 300;
+	animation: outline 3s cubic-bezier(0.77,0,0.18,1) infinite;
+}
+
+@keyframes outline {
+	0% {
+		stroke-dashoffset: 0;
+	}
+	5% {
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dashoffset: 300;
+	}
+	95% {
+		stroke-dashoffset: 600;
+	}
+	100% {
+		stroke-dashoffset: 600;
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0turn);
+	}
+	to {
+		transform: rotate(-1turn);
+	}
+}
 
